@@ -1,0 +1,55 @@
+<html>
+	</head>
+		<title>Signup</title>
+		<link rel="stylesheet" href="signstyle.css">
+		
+		<script>
+			function func()
+			{
+				var mail=document.sign.email.value;
+				var e=/^[0-9a-zA-Z_.]{6,10}\@[0-9a-zA-Z]{3,8}\.[a-zA-Z]{3}$/;
+				if (!mail.match(e)) 
+				{
+					alert('Please provide a valid email address');
+					return false;
+				}
+				var no=document.sign.mobile.value;
+				var m=/^\d{10}$/;
+				if(!no.match(m))
+				{
+					alert('Please enter a valid mobile number');
+					return false;
+				}
+				var pass1=document.sign.pass.value;
+        			var pass2=document.sign.cpass.value;
+        			if (pass1 != pass2) {
+						alert('Passwords do not match');
+						return false;
+				} 
+			}  		
+
+		</script>
+
+	</head>
+	
+	<body>
+			
+		<div id="wrapper">
+			<h3>Sign Up!!</h3>
+		<form onsubmit="return func()" name="sign" action="sign" method="post">
+			
+			<input type="text" name="username" class="tb1" placeholder="Username..." required autofocus><br><br>
+			
+			<input type="text" name="email" class="tb2" placeholder="Email..." required><br><br>
+			
+			<input type="text" name="mobile" class="tb3" placeholder="Mobile Number..." required><br><br>
+			
+			<input type="password" name="pass" class="tb4" placeholder="Password..." required maxlength="10"><br><br>
+			
+			<input type="password" name="cpass" class="tb5" placeholder="Confirm Password..." required maxlength="10"><br><br>
+			<input type="submit" value="SignUp"><br>
+		</form>
+		</div>
+	</body>
+
+</html>

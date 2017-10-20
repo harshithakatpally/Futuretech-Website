@@ -1,0 +1,73 @@
+body{
+background-image:url("images.jpg");
+
+}
+
+.tb1{
+	background-image:url("un4.png");
+	background-repeat:no-repeat;
+	padding-left:45px;
+	font-size:20px;
+}
+
+.tb2{
+      background-image:url("e3.png");
+	background-repeat:no-repeat;
+	padding-left:45px;
+        font-size:20px;
+}
+
+.tb3{
+      background-image:url("mn1.png");
+	background-repeat:no-repeat;
+	padding-left:45px;
+        font-size:20px;
+}
+
+.tb4{
+      background-image:url("pass2.png");
+	background-repeat:no-repeat;
+	padding-left:45px;
+        font-size:20px;
+}
+
+.tb5{
+      background-image:url("pass2.png");
+	background-repeat:no-repeat;
+	padding-left:45px;
+        font-size:20px;
+}
+
+
+#wrapper h3{
+    padding-top:18px;
+    font-size:40px;
+    color:#003366; 
+    margin-left:120px;
+}
+
+#wrapper{
+    width:400px;
+    height:650px;
+    background-color:white;
+    margin-left:500px;
+    font-size:23px;
+    color:white;
+    margin-top:40px;
+    font-weight:bold;
+     border-radius:20px;
+}
+
+#wrapper input{
+    margin-top:10px;
+    margin-left:25px;
+    width:350px;
+    height:50px;
+    border-radius:7px;
+    border:2px solid #00004d;
+}
+#wrapper input[type=submit]{
+    background-color:#003366;
+    font-size:30px;
+    color:white;
+}

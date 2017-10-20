@@ -1,0 +1,41 @@
+<html>
+
+	<head>
+		<link rel="stylesheet" href="loginstyle.css">
+		<style>
+		h3{
+			text-align:center;
+			color:white;
+			padding-top:20px;
+			font-size:25px;
+			}
+		</style>
+		<script>
+			function check()
+			{
+				var mail = document.getElementById('email');
+				var e=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+				if (!e.test(mail.value)) 
+				{
+					alert('Please provide a valid email address');
+					return false;
+				}
+			}
+		</script>
+	</head>
+	
+	<body>
+		<a href="project.html"><h4>BACK TO HOME.</h4></a>
+		<h3>Login to place order.If not a user <a href="signup.html">Click Here</a></h3>
+		<div id="wrapper">
+			<form action="log.jsp" method="post" onsubmit="return check()">
+			<img src="logo2.png"><br><br><br>
+			<input type="text" placeholder="Email..." class="tb2" id="email" name="email" required autofocus><br><br>
+			<input type="password" placeholder="Password..." class="tb3" id="pass" name="pass" required><br><br>
+			<input type="submit" value="Sign In"><br><br>
+			<a href="forgotpass.html">Forgot your password?</a>
+			</form>
+		</div>
+	</body>
+
+</html>

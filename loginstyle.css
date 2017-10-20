@@ -1,0 +1,82 @@
+body{
+    background-image:url("bg1.jpg");
+}
+
+.tb2{
+		
+		color:black;
+		background-image:url('mail1.png');
+		background-repeat:no-repeat;
+		padding-left:54px;
+		
+		
+
+		}
+.tb3{
+		
+		color:black;
+		background-image:url('pass1.jpg');
+		background-repeat:no-repeat;
+		padding-left:54px;
+		
+
+		}
+
+
+#wrapper{
+    margin-left:420px;
+    margin-top:140px;
+    width:550px;
+    height:420px;
+    background-color:white;
+}
+
+
+#wrapper input{
+    width:500px;
+    height:50px;
+    margin-left:25px;
+    font-size:22px;
+    color:black;
+}
+
+#wrapper input[type=text]:focus{
+    background-color:white;
+    border:2px solid #007a99;
+    color:black;
+}
+
+#wrapper input[type=password]{
+	background-color:#f2f2f2;
+	color:black;
+}
+#wrapper input[type=password]:focus{
+   background-color:white;
+   color:black;
+    border:2px solid #007a99;
+}
+
+
+#wrapper input[type=text]{
+    color:black;
+    background-color:#f2f2f2;
+
+}
+#wrapper img{
+    margin-top:40px;
+    margin-left:120px;
+}
+
+#wrapper input[type=submit]{
+    font-size:30px;
+    background-color:#007a99;
+    color:white;
+}
+
+
+#wrapper a{
+  margin-left:25px;
+  text-decoration:none;
+  color:#007a99;
+  font-size:21px;
+}

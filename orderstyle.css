@@ -1,0 +1,55 @@
+#wrapper {
+	margin-left:150px;
+	margin-top:100px;
+	margin-right:150px;
+	border:2px solid grey;
+  	background-color:#ebebe0; 
+}
+
+#wrapper a{
+    font-size:30px;
+    margin-left:40px;
+    margin-top:30px;
+}
+
+#wrapper ul li{
+    font-size:25px;
+  margin-top:40px;
+  margin-left:25px;
+  }
+
+#wrapper h2{
+	padding-top:10px;
+	color:#008b8b;
+	font-size:30px;
+	text-align:center;
+}
+
+#wrapper #tab{
+	width:1000px;
+	margin-left:25px;
+	border-collapse:collapse;
+}
+
+#wrapper #tab th,td{
+  border:1px solid black;
+}
+
+#wrapper #tab th{
+	color:#008b8b;
+	padding:5px;
+	font-size:30px;
+}
+#wrapper #tab td{
+	font-size:20px;
+	text-align:center;
+}
+
+#wrapper input[type=submit]{
+	background-color:#008b8b;
+	color:white;
+	margin-left:100px;
+	margin-top:60px;
+	font-size:30px;
+	margin-bottom:50px;
+}	

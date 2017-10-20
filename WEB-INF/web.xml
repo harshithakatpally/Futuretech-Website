@@ -1,0 +1,65 @@
+<web-app>
+
+	<servlet>
+		<servlet-name>sign</servlet-name>
+		<servlet-class>Sign</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sign</servlet-name>
+		<url-pattern>/sign</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>log</servlet-name>
+		<servlet-class>Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>log</servlet-name>
+		<url-pattern>/LI</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>query</servlet-name>
+		<servlet-class>Query</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>query</servlet-name>
+		<url-pattern>/Q</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>changepass</servlet-name>
+		<servlet-class>Email</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>changepass</servlet-name>
+		<url-pattern>/CP</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>passchange</servlet-name>
+		<servlet-class>Password</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>passchange</servlet-name>
+		<url-pattern>/PC</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addtocart</servlet-name>
+		<servlet-class>Cart</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addtocart</servlet-name>
+		<url-pattern>/addcart</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Logoutser</servlet-name>
+		<servlet-class>Logoutser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Logoutser</servlet-name>
+		<url-pattern>/Logoutser</url-pattern>
+	</servlet-mapping>
+</web-app>

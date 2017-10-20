@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="changepassstyle.css">
+		<script>
+			function check()
+			{
+				var pass1 = document.getElementById("pass").value;
+        			var pass2 = document.getElementById("cpass").value;
+        			if (pass1 != pass2) {
+						alert('Passwords do not match');
+				} 
+			}  		
+
+		</script>
+
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<form action="PC" method="post">
+				<img src="logo2.png"><br><br><br>
+				<input type="password" class="tb3" id="pass" name="pass" placeholder="New Password" required autofocus><br><br>
+				<input type="password" class="tb3" id="cpass" name="cpass" placeholder="Re-enter Password" required><br><br>
+				<input type="submit" value="Confirm" onclick="check()">
+			</form>
+
+		</div>
+	</body>
+
+</html>

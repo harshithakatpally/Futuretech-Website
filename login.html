@@ -1,0 +1,47 @@
+<html>
+
+	<head>
+		<link rel="stylesheet" href="loginstyle.css">
+		
+		<script>
+			function check()
+			{
+				var mail = document.getElementById('email');
+				var e=/^[0-9a-zA-Z_.]@[0-9a-zA-Z].[a-zA-Z]$/;
+				if (!e.test(mail.value)) 
+				{
+					alert('Please provide a valid email address');
+					returb false;
+				}
+				else
+					return true;
+			}
+		</script>
+		<script type="text/javascript">
+			function disableBackButton()
+
+			{
+				
+window.history.forward();
+
+			}
+
+				setTimeout("disableBackButton()", 0);
+
+		</script>
+	</head>
+	
+	<body onunload="disableBackButton()">
+		<a href="project.html"><h4>BACK TO HOME.</h4></a>
+		<div id="wrapper">
+			<form action="log.jsp" method="post">
+			<img src="logo2.png"><br><br><br>
+			<input type="text" placeholder="Email..." class="tb2" id="email" name="email" required autofocus><br><br>
+			<input type="password" placeholder="Password..." class="tb3" id="pass" name="pass" required><br><br>
+			<input type="submit" value="Sign In" onclick="check()"><br><br>
+			<a href="forgotpass.html">Forgot your password?</a>
+			</form>
+		</div>
+	</body>
+
+</html>

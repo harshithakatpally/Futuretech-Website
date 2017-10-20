@@ -1,0 +1,120 @@
+<html>
+	<head><title>FP Systems And Services</title>
+		<link rel="stylesheet" href="homeo.css">
+		<script type="text/JavaScript">
+		<!--
+		var picCount=0; 
+		var picArray= ["2.jpg","3.jpg","4.jpg","5.jpg","8.jpg","1.jpg"];
+			
+			function nextPic()
+			{ 
+				picCount=(picCount+1<picArray.length)? picCount+1 : 0;
+				var build='<img border="0" src="'+picArray[picCount]+'" width="1200" height="400">\
+';
+				document.getElementById("nav").innerHTML=build;
+				setTimeout('nextPic()',2000);
+			}
+			//-->
+		</script>
+
+		<script>
+
+		$(":checkbox").on("change", function(){
+
+			var checkboxValues = {};
+
+			$(":checkbox").each(function(){
+
+			  checkboxValues[this.id] = this.checked;
+
+			});
+
+			$.cookie('checkboxValues', checkboxValues, { expires: 7, path: '/' })
+
+		}
+
+			function repopulateCheckboxes(){
+
+  var checkboxValues = $.cookie('checkboxValues');
+
+  if(checkboxValues){
+
+    Object.keys(checkboxValues).forEach(function(element) {
+
+      var checked = checkboxValues[element];
+
+      $("#" + element).prop('checked', checked);
+
+    });
+
+  }
+
+}
+
+	</script>
+		<style>
+			#username input[type=submit]{
+						float:right;
+						margin-right:70px;
+						font-size:30px;
+    						background-color:#008b8b;
+    						color:white;
+						}
+			#username input[type=submit]:hover{Background-color:orange;}
+		</style>		
+
+	</head>
+	
+	<body  onload="setTimeout('nextPic()',2000)">
+		<div id="header">
+			<img src="logo2.png"/>
+		</div>
+		<div id="username">
+				<form action="Logoutser" method="post">
+				<input type="submit" value="Logout">
+				</form>
+			</div>
+			
+			<ul id="wrapper">
+				
+				<li><a href="aboutl.html">About</a></li>
+				<li><a href="productsl.html">Products</a></li>
+				<li><a href="servicesl.html">Services</a></li>
+				<li><a href="contactl.html">Contact Us</a></li>
+      				
+				
+			</ul>
+		<div id="nav">
+			<img border="0" src="1.jpg" width="1200px" height="400px">
+		</div>
+		<div id="head">
+		<h4>Home Solutions</h4>
+		<form action="order.jsp" method="post"><input type="submit" name="cart" value="View Cart">
+
+		<table id="table1" cellspacing="20">
+			<tr>
+			<td><img src="h1.jpg"><br><h3>CP-HAV-K401B</h3><p>4" TFT B&W Video Door Phone</p><input type="checkbox"  id="check" name="item" value="CP-HAV-K401B">Add to cart<img src="cart3.png"></td>
+			<td><img src="h2.jpg"><br><h3>CP-NAV-K281M</h3><p>2.8" Digital Door Viewer</p><input type="checkbox"  id="check" name="item" value="CP-NAV-K281M">Add to cart<img src="cart3.png"></td>
+			<td><img src="h3.jpg"><br><h3>CP-UVK-A431</h3><p>4.3" Color TFT LCD Villa Door Phone</p><input type="checkbox"  id="check" name="item" value="CP-UVK-A431">Add to cart<img src="cart3.png"></td>
+			<td><img src="h4.jpg"><br><h3>CP-UVK-A701</h3><p>7" Color TFT LCD Cilla Door</p><input type="checkbox"  id="check" name="item" value="CP-UVK-A701">Add to cart<img src="cart3.png"></td>
+			<td><img src="h5.jpg"><br><h3>CP-PAV-C34</h3><p>4 bell Outdoor Station</p><input type="checkbox"  id="check" name="item" value="CP-PAV-C34">Add to cart<img src="cart3.png"></td>
+			</tr>		
+			<tr>
+			<td><img src="h6.jpg"><br><h3>CP-JAV-K70</h3><p>7" Hands free color videos door phone</p><input type="checkbox"  id="check" name="item" value="CP-JAV-K70">Add to cart<img src="cart3.png"></td>
+			<td><img src="h7.jpg"><br><h3>CP-NHA-M701</h3><p>7" Android Based TFT</p><input type="checkbox"  id="check" name="item" value="CP-NHA-M701">Add to cart<img src="cart3.png"></td>
+			<td><img src="h8.jpg"><br><h3>CP-NHA-C5</h3><p>Out Door Unit</p><input type="checkbox"  id="check" name="item" value="CP-NHA-C5">Add to cart<img src="cart3.png"></td>
+			<td><img src="h9.jpg"><br><h3>CP-NHA-CA33</h3><p>Wireless AC Control Module</p><input type="checkbox"  id="check" name="item" value="CP-NHA-CA33">Add to cart<img src="cart3.png"></td>
+			<td><img src="h10.jpg"><br><h3>CP-NHA-RE33</h3><p>Wireless Remote Module</p><input type="checkbox"  id="check" name="item" value="CP-NHA-RE33">Add to cart<img src="cart3.png"></td>
+			</tr>		
+			<tr>
+			<td><img src="h11.jpg"><br><h3>CP-NHA-EB33</h3><p>Wireless SOS Module</p><input type="checkbox"  id="check" name="item" value="CP-NHA-EB33">Add to cart<img src="cart3.png"></td>
+			<td><img src="h12.jpg"><br><h3>CP-NHA-CA36</h3><p>Wireless Alarm Module</p><input type="checkbox"  id="check" name="item" value="CP-NHA-CA36">Add to cart<img src="cart3.png"></td>
+			<td><img src="h13.jpg"><br><h3>CP-NHA-CE36</h3><p>Wireless RF to IR changer Module</p><input type="checkbox"  id="check" name="item" value="CP-NHA-CE36">Add to cart<img src="cart3.png"></td>
+			</tr>
+		</table>
+		</form>
+		</div>
+		<div id="footer">&copy; FutureTechAutomation.All rights reserved.
+		</div>
+	</body>
+</html> 

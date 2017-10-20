@@ -1,0 +1,51 @@
+<html>
+	<head><title>FP Systems And Services</title>
+		<link rel="stylesheet" href="contactstyle.css">
+		<script type="text/JavaScript">
+		<!--
+		var picCount=0; 
+		var picArray= ["2.jpg","3.jpg","4.jpg","1.jpg"];
+			
+			function nextPic()
+			{ 
+				picCount=(picCount+1<picArray.length)? picCount+1 : 0;
+				var build='<img border="0" src="'+picArray[picCount]+'" width="1200" height="400">\
+';
+				document.getElementById("nav").innerHTML=build;
+				setTimeout('nextPic()',2000);
+			}
+			//-->
+		</script>	
+
+	</head>
+	
+	<body  onload="setTimeout('nextPic()',2000)">
+		<div id="header">
+			<img src="logo2.png"/>
+		</div>
+			<ul id="wrapper">
+				<li><a href="project.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+      				
+				
+			</ul>
+		<div id="nav">
+			<img border="0" src="1.jpg" width="1200px" height="400px">
+		</div>
+		<div id="tab">
+                <h1>Contact Us</h1>
+		<table id="table1" cellspacing="40">
+			<tr >
+				<td><h2>Secunderabad</h2><p>Plot no.4, Jai Nagar Colony, 2nd Floor, Beside Tadbund Hanuman Temple, Tadband, Secunderabad, Telangana. Phone no.:+91 40 40165421<br>E-mail : kishore@fpss.co.in</p></td><br>
+				<td><h2>Kukatpally</h2><p>R/O. MIG-6, Phase-I, Dharma Reddy Colony, Near JNTU, KPHB Colony, Kukatpally, Hyderabad Telefax: + 91 8143002050, email: fpsskp@gmail.com</p></td>
+				<td><h2>Vijaywada</h2><p>FP Systems and Services #41-1/5-129B, 1st Floor, Gouthaminagar 1st Lane, Krishna Lanka, Vijayawada-520013 0866-2523197, 9440753197 fpssvja@gmail.com</p></td>
+			</tr>
+		</table>
+		</div>
+		<div id="footer">&copy; FutureTechAutomation.All rights reserved.
+		</div>	
+	</body>
+</html>

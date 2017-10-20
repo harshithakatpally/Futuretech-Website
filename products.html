@@ -1,0 +1,72 @@
+<html>
+	<head><title>FP Systems And Services</title>
+		<link rel="stylesheet" href="productstyle.css">
+		<script type="text/JavaScript">
+		<!--
+		var picCount=0; 
+		var picArray= ["2.jpg","3.jpg","4.jpg","5.jpg","8.jpg","1.jpg"];
+			
+			function nextPic()
+			{ 
+				picCount=(picCount+1<picArray.length)? picCount+1 : 0;
+				var build='<img border="0" src="'+picArray[picCount]+'" width="1200" height="400">\
+';
+				document.getElementById("nav").innerHTML=build;
+				setTimeout('nextPic()',2000);
+			}
+			//-->
+		</script>	
+
+	</head>
+	
+	<body  onload="setTimeout('nextPic()',2000)">
+		<div id="header">
+			<img src="logo2.png"/>
+		</div>
+			<ul id="wrapper">
+				<li><a href="project.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+      				
+				
+			</ul>
+		<div id="nav">
+			<img border="0" src="1.jpg" width="1200px" height="400px">
+		</div>
+		
+		<h2 id="head">Product Categories</h2>
+		<table><tr><td>
+		<div id="products1">
+			<a href="surveillanceo.html">
+				<img src="cctv9.jpg" style="width:200px;height:170px;">
+				<p><strong>Surveillance Products</strong><br><br>Be it in traffic or retail shops, a 24*7<br> surveillance is required from a security<br> standpoint.Explore our product range here and <br> find a complete array of cameras for <br>surveillance.</p>
+			</a>
+		</div></td>
+
+			<td><div id="products2">
+			<a href="timeattendanceo.html">
+				<img src="cctv13.png" style="width:200px;height:170px;">
+				<p><strong>Time & Attendance</strong><br><br>Attendance is of primordial importance in<br>places like offices and educational<br>institutions. And keeping track of attendance<br>is a key problem we solve with out<br>thorough range of cctv cameras.</p>
+			</a>
+		</div></td></tr>
+
+		<tr><td><div id="products3">
+			<a href="homesolutionso.html">
+				<img src="cctv18.jpg" style="width:200px;height:170px;">
+				<p><strong>Home Solutions</strong><br><br>Security is a major concern in today's world <br> where crime rate seems to be rising every <br> moment. Discover our range of CCTV cameras <br> where you'll get plenty of options to choose <br> the best one as per your needs.</p>
+			</a>
+		</div></td>
+
+		<td><div id="products4">
+			<a href="accessorieso.html">
+				<img src="cctv16.jpg" style="width:200px;height:170px;">
+				<p><strong>Accessories</strong><br><br>FutureTech offers you a list of accessories<br>to choose from, thereby giving you<br>various options to add-on to the <br>CCTV camera you have.</p>
+			</a>
+		</div></td></tr>
+		</table>
+		<div id="footer">&copy; FutureTechAutomation.All rights reserved.
+		</div>
+	</body>
+</html>

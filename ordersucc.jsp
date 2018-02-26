@@ -31,11 +31,11 @@
     color:white;
     margin-bottom:50px;
 }
-		  
+
 	</style>
 	</head>
 
-	<body>	
+	<body>
 		<div id="wrapper">
 		<a href="productsl.html">Back to products</a>
 		<h2>Give your details:</h2>

@@ -1,14 +1,14 @@
 body{
-    background-image:url("bg1.jpg");
+    background-image:url("background.jpg");
 }
 
 .tb2{
-		
+
 		color:black;
 		background-image:url('mail1.png');
 		background-repeat:no-repeat;
 		padding-left:54px;
-		
+
 		}
 
 #wrapper p{

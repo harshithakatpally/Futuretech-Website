@@ -1,38 +1,38 @@
 body{
-background-image:url("images.jpg");
+background-image:url("background.jpg");
 
 }
 
 .tb1{
-	background-image:url("un4.png");
+	background-image:url("username.png");
 	background-repeat:no-repeat;
 	padding-left:45px;
 	font-size:20px;
 }
 
 .tb2{
-      background-image:url("e3.png");
+  background-image:url("mail2.png");
 	background-repeat:no-repeat;
 	padding-left:45px;
         font-size:20px;
 }
 
 .tb3{
-      background-image:url("mn1.png");
+  background-image:url("mobile.png");
 	background-repeat:no-repeat;
 	padding-left:45px;
         font-size:20px;
 }
 
 .tb4{
-      background-image:url("pass2.png");
+  background-image:url("password2.png");
 	background-repeat:no-repeat;
 	padding-left:45px;
         font-size:20px;
 }
 
 .tb5{
-      background-image:url("pass2.png");
+  background-image:url("password2.png");
 	background-repeat:no-repeat;
 	padding-left:45px;
         font-size:20px;
@@ -42,7 +42,7 @@ background-image:url("images.jpg");
 #wrapper h3{
     padding-top:18px;
     font-size:40px;
-    color:#003366; 
+    color:#003366;
     margin-left:120px;
 }
 

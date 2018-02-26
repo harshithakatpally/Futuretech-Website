@@ -1,11 +1,11 @@
 body{
-    background-image:url("bg1.jpg");
+    background-image:url("background.jpg");
 }
 
 .tb3{
-		
+
 		color:black;
-		background-image:url('pass1.jpg');
+		background-image:url('password1.jpg');
 		background-repeat:no-repeat;
 		padding-left:54px;
 		height:40px;

@@ -5,51 +5,37 @@
 <%@ page import ="java.util.*" %>
 
 <html>
-
 	<head>
 		<link rel="stylesheet" href="orderstyle.css">
 	</head>
-
 	<body>
-<%
-
-	String DB_URL="jdbc:mysql://localhost/db127";
-
-	String USER="root";
-
-	String PASS="hasinI@24";
-	ServletContext sc=request.getServletContext();
-	String x=(String) sc.getAttribute("name");
-	session.putValue("x",x);	
-
+	<%
+	String DB_URL = "jdbc:mysql://localhost/db127";
+	String USER = "root";
+	String PASS = "hasinI@24";
+	ServletContext sc = request.getServletContext();
+	String x = (String) sc.getAttribute("name");
+	session.putValue("x",x);
 	HttpSession s = request.getSession(true);
-
 	Integer visitCount = new Integer(0);
-
 	String visitCountKey = new String("visitCount");
-
 	String userIDKey = new String("emailid");
-
-	String emailid=new String("x");
-	
+	String emailid = new String("x");
 	String[] itemsSelected;
 	String itemName;
 	itemsSelected=request.getParameterValues("item");
-	Connection conn=null;
-
+	Connection conn = null;
 	Class.forName("com.mysql.jdbc.Driver");
-
-	conn=DriverManager.getConnection(DB_URL,USER,PASS);
+	conn=DriverManager.getConnection(DB_URL, USER, PASS);
 	Statement stmt=conn.createStatement();
-	if(x==null)
+	if(x == null)
 	{
-		RequestDispatcher rd=request.getRequestDispatcher("loginorder.html");
+		RequestDispatcher rd = request.getRequestDispatcher("loginorder.html");
 		rd.forward(request,response);
 	}
-	
-	else	
+	else
 	{
-		if(itemsSelected!=null)
+		if(itemsSelected != null)
 		{ %>
 			<div id="wrapper">
 			<a href="productsl.html">Back to products./a>
@@ -76,14 +62,14 @@
 						<td><%= name %></td>
 						<td><%= cd %></td>
 						<td><%= cost %></td>
-					</tr>	
+					</tr>
 				<% }
 			} %>
 			 </table>
-						
+
 			<%
 		}
-		
+
 	} %>
 		<ul>
 			<li>Cash on delivery.</li>
@@ -95,7 +81,7 @@
 	<% stmt.close();
 	conn.close();
 	 %>
-		
+
 	</body>
 
 </html>
